@@ -15,4 +15,4 @@ Data transform making all keys lowercase
 Transform data by multiplying values by 12
 
 ### Stage 3
-Report summary statistics on values
+Report change in values

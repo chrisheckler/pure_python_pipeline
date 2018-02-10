@@ -29,4 +29,4 @@ for (k,v), (k2,v2) in zip(stage_1_data.items(), stage_2_data.items()) :
     chg = v2 - v
     print('Change in value for {} is {}'.format(k,chg))
 
-print('Stage 2 objectives: Change in values is shown')
+print('Stage 3 objectives: Change in values is shown')
