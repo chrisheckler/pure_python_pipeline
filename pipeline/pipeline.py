@@ -24,6 +24,9 @@ print('Stage 2 data: '+ stage_2_json)
 print('Stage 2 objectives: values are multiplied by 12'+ '\n')
 
 
-# Stage 3 - Summary statistics for values
-stage_3_data = {}
+# Stage 3 - Change is values between each transformation shown
+for (k,v), (k2,v2) in zip(stage_1_data.items(), stage_2_data.items()) :
+    chg = v2 - v
+    print('Change in value for {} is {}'.format(k,chg))
 
+print('Stage 2 objectives: Change in values is shown')
