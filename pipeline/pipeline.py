@@ -2,6 +2,7 @@
 # Copyright (c) 2018 Chris Heckler <hecklerchris@hotmail.com>
 
 import json
+from collections import OrderedDict
 
 # Stage 0 - Create data
 stage_0_data = dict([('Chris', 80000),('Freddie', 50000), ('Jami', 10000), ('Heckie', 1000000)])
@@ -12,6 +13,7 @@ print('Stage 0 objective: Create data' + '\n')
 
 # Stage 1 - Transform keys to lowercase
 stage_1_data = {k.lower(): v for k,v in stage_0_data.items()}
+stage_1_sorted = OrderedDict(sorted(stage_1_data.items(), key=lambda t: t[0]))
 stage_1_json = json.dumps(stage_1_data)
 print('Stage 1 data: '+ stage_1_json)
 print('Stage 1 objectives: Keys are transformed to lowercase'+ '\n')
